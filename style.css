@@ -339,7 +339,7 @@ nav ul li a:hover{
 .footer {
   background-color: #008891;
   width: 100%;
-height: 80%;
+height: 100%;
   text-align: left;
   font-family: calibri;
   font-weight: bold;
@@ -1076,7 +1076,6 @@ footer{
     top: -35px;
     left: 20px;
 }
-
 
 .flex_container{
     display: flex;
