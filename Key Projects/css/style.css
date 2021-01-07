@@ -334,3 +334,8 @@ padding-left: 150px;
     margin-left: 0;
   }
 }
+
+.icons a:hover{
+  transform:scale(1.1);
+  
+}
