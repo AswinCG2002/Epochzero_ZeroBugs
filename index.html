@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!--fav-icon-->
 <link rel="shortcut icon" href="Home Page/images/favicon.ico"/>
@@ -67,28 +68,40 @@
         </div>
 		
 			 <!--Tabular Data-->
-
-       <div class="flex_container">
-        <div class="box1">
-        <img src="Home Page/images/experience-47788.png">
-        <p><span class="flex_data">7+</span> Years of Experience</p>
+       <div class="container">
+        <div class="row">
+          <div class="col-md-4" >
+            <h1><span class="counter"> 7+</span></h1>
+            <h3>Years of Experience</h3>
+            <i class="fa fa-star-o"></i>
+          </div> 
+          <div class="col-md-4">
+            <h1><span class="counter">200+</span></h1>
+            <h3>Projects</h3>
+            <i class="fa fa-desktop"></i>
+          </div>
+          <div class="col-md-4">
+            <h1><span class="counter">100+</span></h1>
+            <h3>Clients</h3>
+            <i class="fa fa-coffee"></i>
+          </div>
+          <div class="col-md-4">
+            <h1><span class="counter">80+</span></h1>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;Offshore Commitments</h3>
+            <i class="fa fa-plane"></i>
+          </div>
         </div>
+      </div>
+      <!--- sample counter js code [if ununsed del]-->
+      <script src="index.js">
+        $('.counter').counterUp({
+    delay: 10,
+    time: 2000
+  });
+  $('.counter').addClass('animated fadeInDownBig');
+  $('h3').addClass('animated fadeIn');
+      </script>
 
-        <div class="box2">
-            <img src="Home Page/images/project.jpeg">
-            <p><span class="flex_data">200+</span> Projects</p>
-        </div>
-
-        <div class="box3">
-            <img src="Home Page/images/client.png">
-            <p><span class="flex_data">100+</span> Clients</p>
-        </div>
-
-        <div class="box4">
-            <img src="Home Page/images/flight.png">
-            <p><span class="flex_data">80+</span> Offshore Work Commitments</p>
-        </div>
-    </div>
         <!--arrow-->
 		
         <div class="arrow"></div>
@@ -97,13 +110,13 @@
     <!--services----------------------->
     <section class="services">
         <!--heading----------->
-		<div class="mission-heading">
-            <h2 align="center">Mission</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dignissimos nemo dolorum eligendi recusandae,</br> necessitatibus illum eveniet alias voluptatem, nostrum, quaerat quis id ab perspiciatis ullam sed reprehenderit</br> aliquid labore!</p>
-        </div>
+        <div class="mission-heading">
+          <h2 align="center">Mission</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dignissimos nemo dolorum eligendi recusandae,</br> necessitatibus illum eveniet alias voluptatem, nostrum, quaerat quis id ab perspiciatis ullam sed reprehenderit</br> aliquid labore!</p>
+      </div>
 
 	<div class="vision-heading">
-            <h2 align="center">Vision</h1>
+            <h2 align="center">Vision</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dignissimos nemo dolorum eligendi recusandae,</br> necessitatibus illum eveniet alias voluptatem, nostrum, quaerat quis id ab perspiciatis ullam sed reprehenderit</br> aliquid labore!</p>
         </div>
         <div class="services-heading">

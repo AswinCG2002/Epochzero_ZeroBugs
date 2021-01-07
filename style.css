@@ -123,17 +123,16 @@ nav ul li a:hover{
     align-items: center;
     background-color: #2ea5ad;
     color:#fff;
-    box-shadow: 5px 10px 30px rgba(90,118,253,0.5);
     text-transform: uppercase;
 }
 .main-login:hover{
-    background-color: #5a62fd;
+    background-color: #00587a;
     transition: all ease 0.3s;
 }
 .timing{
     position: absolute;
     left:20%;
-    bottom: 10px;
+    bottom: 120px;
     transform: translateX(-20%);
     display: flex;
     justify-content: space-around;
@@ -160,15 +159,44 @@ nav ul li a:hover{
     color:#7b92fd;
     font-weight: 700;
 }
-.flex_container{
-	position: relative;
-	top: 230px;
+.container{
+  padding: 0;
+  margin: 0;
+  font-family: calibri;
+  font-weight:200;
+  margin-top: 200px;
+  position: relative;
+  top: 200px;
 }
+
+.col-md-4 {
+  color: white;
+  background-color: #008891;
+
+  min-width: 190px;
+  text-align: center;
+  padding-bottom: 30px;
+  border-right: 1px dashed black;
+}
+
+.col-md-4:last-child {
+  border-right: 0px solid black;
+}
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+i {
+  font-size: 20px !Important;
+}
+
 .mission-heading{
-	position: relative;
-	top: 100px;
-	text-align: center;
-}
+    position: relative;
+    top: 100px;
+      text-align: center;
+  }
 .vision-heading{
 	position: relative;
 	top: 100px;
@@ -1148,3 +1176,14 @@ footer{
     margin-top: 20px;
     }
 }
+@media (max-width: 991px) {
+  .col-md-4 {
+    border-right: 0px dashed black;
+    border-bottom: 1px dashed black;
+    width: 50%;
+    margin: auto auto;
+  }
+  
+  .col-md-4:last-child {
+    border-bottom: 0px dashed black;
+  }
