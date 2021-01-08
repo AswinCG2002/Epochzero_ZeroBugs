@@ -50,7 +50,7 @@
             </div>
             <!--img-->
             <div class="home-img">
-                <img src="Home Page/images/4799410.jpg"/>
+                <img src="Home Page/images/business-people-launches-rocket_132971-304.jpg"/>
             </div>
         </div>
 		<div class="outer-cont">
@@ -117,7 +117,8 @@
 		
         <div class="arrow"></div>
         <span class="scroll">Scroll</span>
-    </section>
+    </section>          
+<!----->
     <!--services----------------------->
     <section class="services">
         <!--heading----------->
@@ -134,6 +135,10 @@
             <h2>Our Products & Services</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dignissimos nemo dolorum eligendi recusandae, necessitatibus illum eveniet alias voluptatem, nostrum, quaerat quis id ab perspiciatis ullam sed reprehenderit aliquid labore!</p>
         </div>
+	<!-- mid img-->
+  <div class="mid-img">
+                <img src="Home Page/images/startup-rocket-business-project-concept-rocket-illustration_169479-149-removebg-preview.png"/>
+            </div>
         <!--box-container----------------->
         <div class="box-container">
             <!--box-1-------->
@@ -243,43 +248,86 @@
         <!--image card end-->
       </div>
       <!--image row end-->
-    
+    <!-- down img-->
+  <div class="down-img">
+                <img src="Home Page/images/4380-removebg-preview.png"/>
+            </div>
 <!-- extra project slider -->
-<div id="slider">
-   <input type="radio" name="slider" id="slide1" checked>
-   <input type="radio" name="slider" id="slide2">
-   
-   <div id="slides">
-      <div id="overflow">
-         <div class="inner">
-            <div class="slide slide_1">
-               <div class="slide-content">
-				   <h2>ProjectOne</h2></br>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-</p>
-               </div>
-            </div>
-            <div class="slide slide_2">
-               <div class="slide-content">
-				   <h2>ProjectTwo</h2></br>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><p>Lorem Ipsum has
-				been the industry's standard dummy text ever since the 1500s,</p><p>when an unknown printer took
-a galley of type and scrambled it to make a type specimen book.</p>
-               </div>
-            </div>
-            </div>
-         </div>
+<div class="img-slider">
+      <div class="slide active">
+        <img src="1.jpg" alt="">
+        <div class="info">
+          <h2>Project 01</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
       </div>
-   </div>
-   <div id="controls">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-   </div>
-   <div id="bullets">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-</div>
+      <div class="slide">
+        <img src="2.jpg" alt="">
+        <div class="info">
+          <h2>Project 02</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
 
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
     <!--footer ------------->
 <footer class="footer">
   <div class="footer-left col-md-4 col-sm-6">
