@@ -92,7 +92,7 @@ textarea {
 .container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 150vh;
   padding: 2rem;
   background-color: #fafafa;
   overflow: hidden;
@@ -100,10 +100,66 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+.contact-info h3{
+	font-size: 40px;
+	font-weight: 200
+	font-family: calibri;
+	position: relative;
+	top: 100px;
+}
+.contact-info p{
+	font-size:16px;
+	font-weight: 100;
+	position: relative;
+	top: 100px;
+}
 
+.enquiry{
+	position: relative;
+	top: 180px;
+	left: 485px;
+	border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+	height: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.enquiry span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.enquiry span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.enquiry:hover span {
+  padding-right: 25px;
+}
+
+.enquiry:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .form {
   width: 100%;
   max-width: 820px;
+	max-height: 800px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
@@ -276,7 +332,7 @@ textarea.input {
 }
 
 .contact-info {
-  padding: 2.3rem 2.2rem;
+  padding: 1rem 2.2rem;
   position: relative;
 }
 
@@ -285,21 +341,115 @@ textarea.input {
 }
 
 .text {
+	position: relative;
+	top: 10x;
   color: #333;
   margin: 1.5rem 0 2rem 0;
 }
 
 .information {
   display: flex;
+	position: relative;
+	top: -190px;
+	left: 470px;
   color: #555;
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
 }
+.social-media h1{
+	position: relative;
+	font-family: calibri;
+	font-weight: 200;
+		top: -59px;
 
-.icon {
+}
+.wrapper{
+	position: relative;
+	min-width: 250px;
+	top: -59px;
+  display:flex;
+  height: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
+
+.img {
   width: 28px;
   margin-right: 0.7rem;
+	position: relative;
+	top:100px;
 }
 
 .social-media {
@@ -468,13 +618,12 @@ textarea.input {
   
 }
 
-
 .footer {
   background-color: #008891;
   width: 110%;
 	height: 45%;
-	position: relative;
-	top: 50px;
+	position: absolute;
+	top: 800px;
 	left: -40px;
   text-align: left;
   font-family: calibri;
@@ -516,11 +665,11 @@ padding-left: 150px;
   margin-bottom: 20px;
 }
 
-.footer .icons {
+.footer .iconsv2 {
   margin-top: 25px;
 }
 
-.footer .icons a {
+.footer .iconsv2 a {
   display: inline-block;
   width: 35px;
   height: 35px;
