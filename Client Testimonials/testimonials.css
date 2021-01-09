@@ -1,7 +1,9 @@
 
 body{
-
-    background-image: url("images/body-bg.png");
+	  overflow-x: hidden;
+    background-image: url("assets/business-people-shaking-hands-meeting-room.jpg");
+	background-repeat: no-repeat;
+  background-size: 1600px 800px;
 }
 .logo {
     font-size: 1rem;
@@ -48,7 +50,7 @@ nav{
     justify-content: space-around;
     padding: 10px 30px;
     background-color:#fff;
-    box-shadow: 2px 2px 20px #008891;
+    box-shadow: 2px 2px 2px #008891;
     z-index: 1;
     width:100%;
     height: 75px;
@@ -87,7 +89,7 @@ nav ul li a:hover{
 
  color:#e7e7de;
  margin:10% 20%;
-  background-color: #008891;
+  background: url("assets/vintage-ornamental-flowers-background_23-2148335456.jpg");
 
    }
 
@@ -96,6 +98,8 @@ nav ul li a:hover{
 
 .testimonial-text {
   margin-top: 5%;
+	font-weight: 300;
+	
  line-height: 1.5;
  font-size: 3rem;
  text-align: center;

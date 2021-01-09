@@ -1,4 +1,5 @@
 body{
+	  overflow-x: hidden;
     margin:0px;
     padding: 0px;
     font-family: calibri;
@@ -45,7 +46,7 @@ nav{
     justify-content: space-around;
     padding: 10px 30px;
     background-color:#fff;
-    box-shadow: 2px 2px 2px #919394;
+    box-shadow: 2px 2px 2px #008891;
     z-index: 1;
     width:100%;
     height: 75px;
@@ -113,7 +114,7 @@ nav ul li a:hover{
   position:absolute;
   top:-490px;
   left:0;
-  width:100%;
+  width:78%;
   height:100%;
   z-index:0;
   display:flex;
@@ -442,6 +443,7 @@ i {
 }
 .footer {
   background-color: #008891;
+	max-height: 300px;
   width: 110%;
 height: 100%;
   text-align: left;
@@ -450,7 +452,7 @@ height: 100%;
   font-size: 16px;
   padding-left: 50px;
 	margin-left: -50px;
-  margin-top: 80px;
+  margin-top: -350px;
 }
 
 .footer .footer-left,

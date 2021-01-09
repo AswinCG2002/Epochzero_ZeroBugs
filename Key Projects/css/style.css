@@ -2,6 +2,7 @@
 
 /* CSS Document */
 body{
+	  overflow-x: hidden;
     margin:0px;
     padding: 0px;
     font-family: calibri;
@@ -179,7 +180,7 @@ nav ul li a:hover{
   padding: 10px;
 padding-left: 150px;
 	padding-top: 40px;
-  margin-top: 90px;
+  margin-top: -50px;
 }
 
 .footer .footer-left,

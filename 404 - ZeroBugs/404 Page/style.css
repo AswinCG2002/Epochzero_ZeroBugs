@@ -1,90 +1,94 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
-  margin: 2px;
-  padding: 0;
-  font-family: 'Courier New', monospace;
-	  font-size: 19px;
-  background-image: url("bgfill.jpg");
-  background-size: auto;
-  background-position: contain;
+    background-image: url("bg.jpg");
+  height: 100%;
+	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.container{
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: #fff
+#pagenotfound{
+    position: relative;
+	top: 45px;
+    height: 100vh;
+}
+#pagenotfound .pagenotfound{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.pagenotfound{
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+}
+.pagenotfound .notfound404{
+    height: 280px;
+    position: relative;
+    z-index: -1;
+}
+.pagenotfound .notfound404 h1{
+	font-family: calibri;
+    font-size: 230px;
+    margin: 0px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: url('pic.jpg') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+}
+.pagenotfound h2{
+    font-family: calibri;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.pagenotfound p{
+    font-family: calibri;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.pagenotfound a{
+    font-family: calibri;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #0046d5;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 700;
+    -webkit-box-shadow:0px 4px 15px -5px #0046d5;
+    box-shadow: 0px 4px 15px -5px #0046d5;
 }
 
-.container h1{
-  font-size: 160px;
-  margin: 0;
-  font-weight: 900;
-  letter-spacing: 20px;
-  background: url(bg.jpg) center no-repeat;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
+@media only screen and (max-width:900px){
 
-.container a{
-  text-decoration: none;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,46,210,1) 35%, rgba(0,212,255,1) 100%);  color: #fff;
-  padding: 12px 24px;
-  display: inline-block;
-  border-radius: 25px;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: 0.4s;
+    .pagenotfound .notfound404 {
+        height: 142px;
+    }
+    .pagenotfound .notfound404 h1{
+        font-size: 112px;
+    }
+    .pagenotfound p{
+        font-size: 18px;
+    }
 }
-
-.container a:hover{
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,46,210,1) 35%, rgba(0,212,255,1) 100%);}
-body{
-  margin: 2px;
-  padding: 0;
-  font-family: 'Courier New', monospace;
-	  font-size: 19px;
-  background-image: url("bgfill.jpg");
-  background-size: auto;
-  background-position: contain;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container{
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: #fff
-}
-
-.container h1{
-  font-size: 160px;
-  margin: 0;
-  font-weight: 900;
-  letter-spacing: 20px;
-  background: url(bg.jpg) center no-repeat;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.container a{
-  text-decoration: none;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,46,210,1) 35%, rgba(0,212,255,1) 100%);  color: #fff;
-  padding: 12px 24px;
-  display: inline-block;
-  border-radius: 25px;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: 0.4s;
-}
-
-.container a:hover{
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,46,210,1) 35%, rgba(0,212,255,1) 100%);}
