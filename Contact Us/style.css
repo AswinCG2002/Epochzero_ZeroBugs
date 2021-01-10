@@ -119,49 +119,6 @@ textarea {
 	position: relative;
 	top: 100px;
 }
-
-.enquiry{
-	position: relative;
-	top: 180px;
-	left: 485px;
-	border-radius: 4px;
-  background-color: #008891;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-	height: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.enquiry span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.enquiry span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.enquiry:hover span {
-  padding-right: 25px;
-}
-
-.enquiry:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 .form {
   width: 100%;
   max-width: 820px;
@@ -369,6 +326,90 @@ textarea.input {
 	font-weight: 200;
 		top: -59px;
 
+}
+.enquiry{
+	position: absolute;
+	top: 260px;
+	left: 535px;
+	border-radius: 4px;
+  background-color: #008891;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+	height: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+.content{
+	background: #008891;
+	margin-top: 0px;
+}
+.titleform{
+	font-family: calibri;
+position: relative;
+	top: -110px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: relative;
+  top: 0px;
+  right: -380px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #008891;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }
 .wrapper{
 	position: relative;
