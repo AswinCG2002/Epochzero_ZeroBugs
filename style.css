@@ -1364,4 +1364,9 @@ footer{
   
   .col-md-4:last-child {
     border-bottom: 0px dashed black;
+  }}
+
+  .icons a:hover{
+    transform:scale(1.1);
+    
   }
