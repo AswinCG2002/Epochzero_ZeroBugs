@@ -102,7 +102,7 @@ nav ul li a:hover{
 .testimonial-text {
   margin-top: 5%;
 	font-weight: 300;
-	
+
  line-height: 1.5;
  font-size: 3rem;
  text-align: center;
@@ -270,19 +270,162 @@ padding-left: 150px;
   margin: 0;
 }
 
+@media(max-width:1100px){
+    nav{
+        justify-content: space-between;
+        height: 65px;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background-color: #fff;
+        border-bottom: 4px solid #5a76fd;
+        width:100%;
+    }
+    .menu li{
+        width:100%;
+    }
+    nav .menu li a{
+        width:100%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin:0px;
+        padding: 25px;
+        border:1px solid rgba(38,38,38,0.03);
+    }
+    nav .menu-icon{
+        cursor: pointer;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    nav .menu-icon .nav-icon{
+        background-color: #333333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background 0.2s ease-out;
+        width:18px;
+    }
+    nav .menu-icon .nav-icon:before,
+    nav .menu-icon .nav-icon:after{
+        background: #333333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width:100%;
+    }
+    nav .menu-icon .nav-icon:before{
+        top: 5px;
+    }
+    nav .menu-icon .nav-icon:after{
+        top:-5px;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .menu-btn{
+        display: none;
+    }
+    nav .menu-btn:checked ~ .menu{
+        display: block;
+    }
+	}
 @media (max-width: 767px) {
+	.testimonial-text{
+		font-size: 30px;
+	}
+	#testimonials{
+		margin-left:30%;
+		margin-right: 20%;
+		margin-top: 40%;
+		margin-bottom: 40%;
+	}
+	.small h3{
+
+		font-size: 15px;
+	}
+	.small h4{
+
+		font-size: 20px;
+
+	}
+	.small{
+		padding: 5% 30%;
+	}
+	.footer{
+		margin-top: 300px;
+min-height: 700px;
+min-width: 530px;
+padding-left: 30%;
+padding-right: 30%;
+	}
   .footer {
     font-size: 14px;
   }
   .footer .footer-left,
   .footer .footer-center,
   .footer .footer-right {
-    display: block;
+    display:inline-block;
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
   }
   .footer .footer-center i {
     margin-left: 0;
+  }
+}
+@media screen and (max-width:1100px) {
+  .footer-container{
+    max-width: 400px;
+  }
+  .right-col{
+    width: 800%;
+    margin-bottom: 60px;
+  }
+
+  .left-col{
+    width: 100%;
+    text-align: left;
+  }
+}
+@media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 600px;
+  }
+  .right-col{
+    width: 800%;
+    margin-bottom: 60px;
+  }
+
+  .left-col{
+    width: 100%;
+    text-align: left;
+  }
+}
+@media (max-width: 991px) {
+  .col-md-4 {
+    border-right: 0px dashed black;
+    border-bottom: 1px dashed black;
+    width: 50%;
+    margin: auto auto;
+  }
+
+  .col-md-4:last-child {
+    border-bottom: 0px dashed black;
   }
 }
