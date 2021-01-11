@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Careers</title>
+
+
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+
+    <!-- Custom Style-->
+    <link rel="stylesheet" href="./css/Style.css">
+	<link rel="shortcut icon" href="assets/favicon.ico"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+<nav>
+	
+            <!--logo-->
+            <a href="#" class="logo">
+                <img src="assets/Logo.jpeg">
+                <h1>&nbsp EpochZero</h1>
+            </a>
+            <!--menu-btn----------->
+				<input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Key Projects/index.html">Key Projects</a></li>
+                <li><a href="../Client Testimonials/testimonials.html">Client Testimonials</a></li>
+                <li><a href="../Careers/Index.html">Careers</a></li>
+                <li><a href="../Contact Us/index.html">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    <div class="container" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
+        <div class="panel">
+            <div class="row">
+                <div class="col liquid">
+                    <h4><i class="fas fa-"></i>EpochZero</h4>
+
+                    <!-- Owl-Carousel -->
+
+                    <div class="owl-carousel owl-theme">
+                       
+                    </div>
+
+                    <!-- /Owl-Carousel -->
+
+                    <div class="follow">
+                        Follow us <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="col-login">
+
+                    <form>
+                        <div class="titles">
+                            <h3>Apply Here</h3>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" class="form-input">
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon">
+								<div class="input-font">
+								<h3>Position to apply</h3></div>
+<content class="ddl-flat">
+  <select class="dropdown" tabindex="9">
+    <option value="" selected="selected" disabled="disabled">Choose Job Position--</option>
+    <option value="Frontend Developer">Frontend Developer</option>
+    <option value="Backend Developer">Backend Developer</option>
+    <option value="Database Administrator">Database Administrator</option>
+    <option value="Network Engineer">Network Engineer</option>
+  </select>
+
+</content>
+
+                           </div>
+                        </div>
+						 <div class="form-group">
+                            <input type="text" placeholder="E-mail ID" class="form-input">
+                            <div class="input-icon">
+                                <i class="fas fa-envelope-open-text"></i>
+								   </div>
+                        </div>
+						 <div class="form-group">
+                            <input type="text" placeholder="Contact Number" class="form-input">
+                            <div class="input-icon">
+                                <i class="fas fa-mobile"></i>
+								   </div>
+                        </div>
+						<input type="file" id="real-file" hidden="hidden" />
+<button type="button" id="custom-button">CHOOSE A FILE</button>
+<span id="custom-text">Upload your resume.</span>
+  <script>
+       const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+    </script>
+                        <button type="submit" class="btn btn-login">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                items: 1
+            });
+        });
+    </script>
+	
+</body>
+    <!--footer ------------->
+<footer class="footer">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class="about">
+      <span> About the company</span> 
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dignissimos nemo dolorum eligendi recusandae, necessitatibus illum eveniet alias voluptatem, nostrum, quaerat quis id ab perspiciatis ullam sed reprehenderit aliquid labore!
+    </p>
+    <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter-square"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span> Address</span> Lorem Ipsum</p>
+    </div>
+    <div>
+      <i class="fa fa-mobile"></i>
+      <p>+91 95959 59595</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p>loremipsum@gmail.com</p>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+    <h2> EpochZero</h2>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+</html>

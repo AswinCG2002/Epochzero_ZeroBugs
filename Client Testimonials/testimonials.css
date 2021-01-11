@@ -1,15 +1,98 @@
 
 body{
-
-    background-image: url("images/body-bg.png");
+	  overflow-x: hidden;
+    background-image: url("assets/business-people-shaking-hands-meeting-room.jpg");
+	background-repeat: no-repeat;
+  background-size: 1600px 800px;
 }
+.logo {
+    font-size: 1rem;
+    line-height: 55px;
+    color:#22252e;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin: 0px;
+    align-content: flex-start
+    ;
+}
+  .logo h1{
+    position: relative;
+    font-weight: 300;
+	  font-size: 32px;
+    top: -45px;
+    left: 40px;
+  }
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    width:100%;
+    height:100vh;
+    background-image: url(images/product.bg);
+    background-size: cover;
+    background-position: top left;
+    position: relative;
+}
+.logo img{
+    height: 20px;
+}
+nav{
+	text-decoration: none;
+    display: flex;
+	font-size: 20px;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 10px 30px;
+    background-color:#fff;
+    box-shadow: 2px 2px 2px #008891;
+    z-index: 1;
+    width:100%;
+    height: 75px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+nav .menu-btn{
+	visibility: hidden;
+}
+nav ul{
+    display: flex;
+    margin:0px;
+    padding: 0px;
+}
+nav ul li a{
+		text-decoration: none;
+    height:40px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#111;
+    letter-spacing: 1px;
+}
+nav ul li a:hover{
+    background-color: #2ea5ad;
+    color:#fff;
+    box-shadow: 5px 10px 30px #9bd9dd;
+    transition: all ease 0.2s;
+}
+
 
 #testimonials {
 
 
  color:#e7e7de;
  margin:10% 20%;
-  background-color: #008891;
+  background: url("assets/vintage-ornamental-flowers-background_23-2148335456.jpg");
 
    }
 
@@ -18,6 +101,8 @@ body{
 
 .testimonial-text {
   margin-top: 5%;
+	font-weight: 300;
+	
  line-height: 1.5;
  font-size: 3rem;
  text-align: center;
@@ -31,4 +116,173 @@ font-family: 'IBM Plex Sans', sans-serif;
   /* font-family: 'Patua One', cursive;  */
 font-family: 'IBM Plex Sans', sans-serif;
 text-align: center;
+}
+
+.footer {
+  background-color: #008891;
+  width: 110%;
+	height: 45%;
+	position: relative;
+	top: 50px;
+	left: -10px;
+  text-align: left;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+padding-left: 150px;
+	padding-top: 40px;
+  margin-top: 90px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* footer left*/
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #0099ff;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #0099ff;
+}
+
+.footer .name {
+  color: #0099ff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
 }
