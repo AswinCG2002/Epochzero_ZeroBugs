@@ -70,6 +70,9 @@ nav{
     left: 0px;
     top: 0px;
 }
+nav .menu-btn{
+visibility: hidden;
+}
 nav ul{
     display: flex;
     margin:0px;
@@ -461,11 +464,11 @@ form .input-icon{
 }
 .ddl-flat{
 	  display: inline-block;
-  background-color: ;
+  background-color: #fff;
   z-index: 0;
 	 position: relative;
 	font-family: calibri;
-	fg: #008891;
+	background: #008891;
     font-weight: 200;
     top: -2px;
     left: 112px;

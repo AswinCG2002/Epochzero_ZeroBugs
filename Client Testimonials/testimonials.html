@@ -20,6 +20,7 @@
 		      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 	  	<link rel="shortcut icon" href="../Client Testimonials/assets/favicon.ico"/>
 </head>
@@ -34,6 +35,7 @@
                 <h1>&nbsp EpochZero</h1>
             </a>
             <!--menu-btn----------->
+				<input class="menu-btn" type="checkbox" id="menu-btn">
             <label class="menu-icon" for="menu-btn">
                 <span class="nav-icon"></span>
             </label>
@@ -47,8 +49,8 @@
                
             </ul>
         </nav>
-  <section id="testimonials">
-    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+  <section id="testimonials" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
       <div class="carousel-inner">
         <div class="carousel-item container-fluid active">
           <h2 class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>.</h2>
@@ -124,7 +126,13 @@
     <h2> EpochZero</h2>
   </div>
 </footer>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
 </body>
 
 </html>

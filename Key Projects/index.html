@@ -7,6 +7,8 @@
 <title>Our Projects</title>
 <link rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/lightslider.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 <!--Jquery-->
 <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
 <script type="text/javascript" src="js/lightslider.js"></script>
@@ -27,6 +29,7 @@
                 <h1>&nbsp EpochZero</h1>
             </a>
             <!--menu-btn----------->
+						<input class="menu-btn" type="checkbox" id="menu-btn">
             <label class="menu-icon" for="menu-btn">
                 <span class="nav-icon"></span>
             </label>
@@ -46,7 +49,7 @@
 		<!--1------------------------------>
   <li class="item-a">
 	  <!--slider-box-->
-		<div class="box">
+		<div class="box" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
 		<p class="project-name">Project One</p>
 		<!--model-->
 		<img src="" class="model">
@@ -65,7 +68,7 @@ a galley of type and scrambled it to make a type specimen book.</p>
 		<!--2------------------------------>
   <li class="item-a">
 	  <!--slider-box-->
-		<div class="box">
+		<div class="box" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
 		<p class="project-name">Project two</p>
 		<!--model-->
 		<img src="" class="model">
@@ -84,7 +87,7 @@ a galley of type and scrambled it to make a type specimen book.</p>
 		<!--3------------------------------>
   <li class="item-a">
 	  <!--slider-box-->
-		<div class="box">
+		<div class="box" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
 		<p class="project-name">Project three</p>
 		<!--model-->
 		<img src="" class="model">
@@ -103,7 +106,7 @@ a galley of type and scrambled it to make a type specimen book.</p>
 		<!--4------------------------------>
   <li class="item-a">
 	  <!--slider-box-->
-		<div class="box">
+		<div class="box" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
 		<p class="project-name">Project four</p>
 		<!--model-->
 		<img src="" class="model">
@@ -122,7 +125,7 @@ a galley of type and scrambled it to make a type specimen book.</p>
 		<!--5------------------------------>
   <li class="item-a">
 	  <!--slider-box-->
-		<div class="box">
+		<div class="box" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
 		<p class="project-name">Project five</p>
 		<!--model-->
 		<img src="" class="model">
@@ -141,7 +144,7 @@ a galley of type and scrambled it to make a type specimen book.</p>
 		<!--6------------------------------>
   <li class="item-a">
 	  <!--slider-box-->
-		<div class="box">
+		<div class="box" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
 		<p class="project-name">Project six</p>
 		<!--model-->
 		<img src="" class="model">
@@ -160,7 +163,7 @@ a galley of type and scrambled it to make a type specimen book.</p>
 			
 			<li class="item-a">
 	  <!--slider-box-->
-		<div class="box">
+		<div class="box" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
 		<p class="project-name">Project seven</p>
 		<!--model-->
 		<img src="" class="model">
@@ -179,7 +182,7 @@ a galley of type and scrambled it to make a type specimen book.</p>
 			
 			<li class="item-a">
 	  <!--slider-box-->
-		<div class="box">
+		<div class="box" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
 		<p class="project-name">Project eight</p>
 		<!--model-->
 		<img src="" class="model">
@@ -237,5 +240,12 @@ a galley of type and scrambled it to make a type specimen book.</p>
     <h2> EpochZero</h2>
   </div>
 </footer>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
 </body>
 </html>

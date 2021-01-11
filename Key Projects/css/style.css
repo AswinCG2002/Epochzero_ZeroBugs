@@ -57,6 +57,9 @@ nav{
     left: 0px;
     top: 0px;
 }
+nav .menu-btn{
+visibility: hidden;
+}
 nav ul{
     display: flex;
     margin:0px;

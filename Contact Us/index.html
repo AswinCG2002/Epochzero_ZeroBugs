@@ -12,6 +12,7 @@
 	      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  	<link rel="shortcut icon" href="img/favicon.ico"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
   <body>
@@ -22,6 +23,7 @@
                 <h1>&nbsp EpochZero</h1>
             </a>
             <!--menu-btn----------->
+		  			<input class="menu-btn" type="checkbox" id="menu-btn">
             <label class="menu-icon" for="menu-btn">
                 <span class="nav-icon"></span>
             </label>
@@ -35,7 +37,7 @@
                
             </ul>
         </nav>
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
       <span class="big-circle"></span>
       <img src="img/shape.png" class="square" alt="" />
       <div class="form">
@@ -167,7 +169,13 @@
     <h2> EpochZero</h2>
   </div>
 </footer>
-	  
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
 
     <script src="form.js"></script>
     <script src="contact.js"></script>

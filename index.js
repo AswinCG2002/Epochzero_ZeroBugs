@@ -4,3 +4,7 @@ $('.counter').counterUp({
   });
   $('.counter').addClass('animated fadeInDownBig');
   $('h3').addClass('animated fadeIn');
+
+AOS.init({
+  duration: 1200,
+})

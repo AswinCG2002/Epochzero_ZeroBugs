@@ -22,6 +22,7 @@
     <!-- Custom Style-->
     <link rel="stylesheet" href="./css/Style.css">
 	<link rel="shortcut icon" href="assets/favicon.ico"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -34,6 +35,7 @@
                 <h1>&nbsp EpochZero</h1>
             </a>
             <!--menu-btn----------->
+				<input class="menu-btn" type="checkbox" id="menu-btn">
             <label class="menu-icon" for="menu-btn">
                 <span class="nav-icon"></span>
             </label>
@@ -47,7 +49,7 @@
                
             </ul>
         </nav>
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
         <div class="panel">
             <div class="row">
                 <div class="col liquid">
@@ -188,5 +190,11 @@ realFileBtn.addEventListener("change", function() {
     <h2> EpochZero</h2>
   </div>
 </footer>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
 </html>
